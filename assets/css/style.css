@@ -1,0 +1,428 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Login Styles */
+.login-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.login-container h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.login-container .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.login-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.login-container button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+.login-container button:hover {
+    background-color: #45a049;
+}
+
+.error {
+    color: #d9534f;
+    margin-bottom: 15px;
+}
+
+/* Main Application Styles */
+body.main-app {
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+    height: auto;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #333;
+}
+
+.presentation-info {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+.presenter-card {
+    flex: 1;
+    padding: 15px;
+    margin: 0 5px;
+    border-radius: 5px;
+}
+
+.previous {
+    background-color: #e8e8e8;
+    color: #666;
+}
+
+.current {
+    background-color: #e9f7ef;
+    font-weight: bold;
+}
+
+.next {
+    background-color: #e6f3f8;
+    color: #666;
+}
+
+.date {
+    font-size: 18px;
+    color: #666;
+    margin-top: 20px;
+}
+
+.not-business-day-message {
+    font-size: 18px;
+    color: #d9534f;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+.vacation-message {
+    font-size: 16px;
+    color: #f0ad4e;
+    margin: 10px 0;
+    font-style: italic;
+}
+
+.label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.team-list {
+    margin-top: 30px;
+    text-align: left;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+.team-list h2 {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.team-member {
+    background-color: #f0f0f0;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 15px;
+    font-size: 14px;
+    position: relative;
+}
+
+.current-member {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+}
+
+.vacation-member {
+    background-color: #f0ad4e;
+    color: white;
+}
+
+.vacation-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: #d9534f;
+    color: white;
+    border-radius: 50%;
+    padding: 3px 6px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.config-panel {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.config-panel h2 {
+    font-size: 16px;
+    margin-top: 0;
+    color: #444;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button[type="submit"] {
+    width: auto;
+    margin-top: 5px;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.form-row .form-group {
+    flex: 1;
+    min-width: 0;
+    max-width: 250px;
+}
+
+.holidays-list, .vacations-list {
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #eee;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: #fafafa;
+}
+
+.holiday-item, .vacation-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.holiday-item:last-child, .vacation-item:last-child {
+    border-bottom: none;
+}
+
+.holiday-date, .vacation-date {
+    font-weight: bold;
+}
+
+.holiday-name, .vacation-name {
+    margin-left: 10px;
+    flex-grow: 1;
+}
+
+.remove-btn {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 2px 6px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.remove-btn:hover {
+    background-color: #c9302c;
+}
+
+.vacation-period {
+    color: #666;
+    font-style: italic;
+    font-size: 12px;
+}
+
+.logout-link {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #666;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.logout-link:hover {
+    text-decoration: underline;
+}
+
+.tabs {
+    display: flex;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.tab {
+    padding: 10px 15px;
+    cursor: pointer;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-bottom: none;
+    border-radius: 5px 5px 0 0;
+    margin-right: 5px;
+}
+
+.tab.active {
+    background-color: #fff;
+    border-bottom-color: #fff;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Calendar Styles */
+.calendar-section {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #f0f7ff;
+    border-radius: 5px;
+}
+
+.calendar-section h2 {
+    margin-top: 0;
+    font-size: 18px;
+    color: #0066cc;
+}
+
+.calendar-container {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.calendar-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.calendar-table th {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.calendar-table td {
+    padding: 8px;
+    border-bottom: 1px solid #eee;
+}
+
+.calendar-today {
+    background-color: #e9f7ef;
+    font-weight: bold;
+}
+
+.calendar-weekend {
+    color: #999;
+    background-color: #f9f9f9;
+}
+
+.calendar-status-available {
+    color: #4CAF50;
+}
+
+.calendar-status-vacation {
+    color: #f0ad4e;
+    font-style: italic;
+}
+
+.calendar-status-holiday {
+    color: #d9534f;
+}
+
+.calendar-status-no-daily {
+    color: #999;
+}
+
+.no-vacations-message {
+    text-align: center;
+    color: #999;
+    padding: 20px;
+}
+
+@media (max-width: 600px) {
+    .form-row {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .presentation-info {
+        flex-direction: column;
+    }
+    
+    .presenter-card {
+        margin: 5px 0;
+    }
+}
