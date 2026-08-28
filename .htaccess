@@ -1,0 +1,13 @@
+Options -Indexes
+DirectoryIndex index.php
+
+# Segurança: bloquear acesso a arquivos sensíveis
+<FilesMatch "\.(json|log|sh|env)$">
+    Order deny,allow
+    Deny from all
+</FilesMatch>
+
+# PHP
+php_flag display_errors off
+php_flag log_errors on
+php_value date.timezone America/Sao_Paulo

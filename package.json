@@ -1,0 +1,8 @@
+{
+  "name": "daily-app-automation",
+  "private": true,
+  "type": "module",
+  "devDependencies": {
+    "playwright": "1.56.1"
+  }
+}
